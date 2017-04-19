@@ -52,7 +52,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class ConnectPlugin extends CordovaPlugin {
+public class SDKPlugin extends CordovaPlugin {
 
     private static final int INVALID_ERROR_CODE = -2; //-1 is FacebookRequestError.INVALID_ERROR_CODE
     private static final String PUBLISH_PERMISSION_PREFIX = "publish";
@@ -65,7 +65,7 @@ public class ConnectPlugin extends CordovaPlugin {
             add("rsvp_event");
         }
     };
-    private final String TAG = "ConnectPlugin";
+    private final String TAG = "SDKPlugin";
 
     private CallbackManager callbackManager;
     private AppEventsLogger logger;

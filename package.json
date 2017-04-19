@@ -17,13 +17,7 @@
   "keywords": [
     "cordova",
     "facebook",
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios",
-    "cordova-browser",
     "facebook-sdk",
-    "social",
-    "sharing"
   ],
   "license": "Apache-2.0"
 }

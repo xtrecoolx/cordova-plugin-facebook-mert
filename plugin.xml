@@ -4,7 +4,7 @@
         id="cordova-plugin-facebook-mert"
         version="1.0.0">
 
-    <name>Facebook Connect</name>
+    <name>Facebook SDK</name>
 
     <description>
       This is the unofficial plugin for Facebook in Apache Cordova/PhoneGap!
@@ -24,12 +24,12 @@
 
     <!-- android -->
     <platform name="android">
-        <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
-            <clobbers target="facebookConnectPlugin" />
+        <js-module src="www/facebook-native.js" name="FacebookSDKPlugin">
+            <clobbers target="FacebookSDKPlugin" />
         </js-module>
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="FacebookConnectPlugin">
+            <feature name="FacebookSDKPlugin">
                 <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
                 <param name="onload" value="true" />
             </feature>
@@ -41,8 +41,8 @@
             <preference name="android-minSdkVersion" value="15" />
         </config-file>
 
-        <source-file src="src/android/facebookconnect.xml" target-dir="res/values" />
-        <config-file target="res/values/facebookconnect.xml" parent="/*">
+        <source-file src="src/android/facebooksdk.xml" target-dir="res/values" />
+        <config-file target="res/values/facebooksdk.xml" parent="/*">
             <string name="fb_app_id">$APP_ID</string>
             <string name="fb_app_name">$APP_NAME</string>
         </config-file>
@@ -59,22 +59,22 @@
         <framework src="com.facebook.android:facebook-android-sdk:4.14.+"/>
 
         <!-- cordova plugin src files -->
-        <source-file src="src/android/ConnectPlugin.java" target-dir="src/org/apache/cordova/facebook" />
+        <source-file src="src/android/SDKPlugin.java" target-dir="src/org/apache/cordova/facebook" />
 
     </platform>
 
     <!-- ios -->
     <platform name="ios">
-        <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
-            <clobbers target="facebookConnectPlugin" />
+        <js-module src="www/facebook-native.js" name="FacebookSDKPlugin">
+            <clobbers target="FacebookSDKPlugin" />
         </js-module>
 
         <config-file target="config.xml" parent="/*">
-            <feature name="FacebookConnectPlugin">
-                <param name="ios-package" value="FacebookConnectPlugin"/>
+            <feature name="FacebookSDKPlugin">
+                <param name="ios-package" value="FacebookSDKPlugin"/>
                 <param name="onload" value="true" />
             </feature>
-            <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
+            <plugin name="FacebookSDKPlugin" value="FacebookSDKPlugin"/>
             <access origin="https://m.facebook.com" />
             <access origin="https://graph.facebook.com" />
             <access origin="https://api.facebook.com" />
@@ -82,8 +82,8 @@
             <access origin="https://*.akamaihd.net" />
         </config-file>
 
-        <header-file src="src/ios/FacebookConnectPlugin.h" />
-        <source-file src="src/ios/FacebookConnectPlugin.m" />
+        <header-file src="src/ios/FacebookSDKPlugin.h" />
+        <source-file src="src/ios/FacebookSDKPlugin.m" />
 
         <config-file target="*-Info.plist" parent="FacebookAppID">
             <string>$APP_ID</string>
@@ -154,15 +154,15 @@
 
     <!-- browser -->
     <platform name="browser">
-        <js-module src="www/facebook-browser.js" name="FacebookConnectPluginBrowser">
-            <clobbers target="facebookConnectPlugin" />
+        <js-module src="www/facebook-browser.js" name="FacebookSDKPluginBrowser">
+            <clobbers target="FacebookSDKPlugin" />
         </js-module>
         <config-file target="config.xml" parent="/*">
-            <feature name="FacebookConnectPlugin">
-                <param name="browser-package" value="FacebookConnectPluginBrowser"/>
+            <feature name="FacebookSDKPlugin">
+                <param name="browser-package" value="FacebookSDKPluginBrowser"/>
                 <param name="onload" value="true" />
             </feature>
-            <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
+            <plugin name="FacebookSDKPlugin" value="FacebookSDKPlugin"/>
             <access origin="https://m.facebook.com" />
             <access origin="https://connect.facebook.net" />
             <access origin="https://graph.facebook.com" />

@@ -1,5 +1,5 @@
 //
-//  FacebookConnectPlugin.m
+//  FacebookSDKPlugin.m
 //  GapFacebookConnect
 //
 //  Created by Jesse MacFadyen on 11-04-22.
@@ -11,10 +11,10 @@
 //  Copyright 2011 Nitobi, Mathijs de Bruin. All rights reserved.
 //
 
-#import "FacebookConnectPlugin.h"
+#import "FacebookSDKPlugin.h"
 #import <objc/runtime.h>
 
-@interface FacebookConnectPlugin ()
+@interface FacebookSDKPlugin ()
 
 @property (strong, nonatomic) NSString* dialogCallbackId;
 @property (strong, nonatomic) FBSDKLoginManager *loginManager;
@@ -26,7 +26,7 @@
 - (BOOL)areAllPermissionsReadPermissions:(NSArray*)permissions;
 @end
 
-@implementation FacebookConnectPlugin
+@implementation FacebookSDKPlugin
 
 - (void)pluginInitialize {
     NSLog(@"Starting Facebook Connect Plugin Mert");
@@ -777,7 +777,7 @@
 
 #pragma mark - AppDelegate Overrides
 
-@implementation AppDelegate (FacebookConnectPlugin)
+@implementation AppDelegate (FacebookSDKPlugin)
 
 void FBMethodSwizzle(Class c, SEL originalSelector) {
     NSString *selectorString = NSStringFromSelector(originalSelector);
