@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-facebook-mert",
+  "version": "1.7.4",
+  "description": "Cordova Facebook SDK Plugin",
+  "cordova": {
+    "id": "cordova-plugin-facebook-mert",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xtrecoolx/cordova-plugin-facebook-mert"
+  },
+  "keywords": [
+    "cordova",
+    "facebook",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "facebook-sdk",
+    "social",
+    "sharing"
+  ],
+  "license": "Apache-2.0"
+}
