@@ -7,6 +7,7 @@
 //  Updated by Christine Abernathy on 13-01-22
 //  Updated by Jeduan Cornejo on 15-07-04
 //  Updated by Eds Keizer on 16-06-13
+// 	Modified by Mert Sevinc on 19-05-16
 //  Copyright 2011 Nitobi, Mathijs de Bruin. All rights reserved.
 //
 
@@ -28,7 +29,7 @@
 @implementation FacebookConnectPlugin
 
 - (void)pluginInitialize {
-    NSLog(@"Starting Facebook Connect plugin");
+    NSLog(@"Starting Facebook Connect Plugin Mert");
 
     // Add notification listener for tracking app activity with FB Events
     [[NSNotificationCenter defaultCenter] addObserver:self

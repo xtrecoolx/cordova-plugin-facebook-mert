@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-facebook-mert",
-  "version": "1.7.4",
+  "version": "1.0.0",
   "description": "Cordova Facebook SDK Plugin",
   "cordova": {
     "id": "cordova-plugin-facebook-mert",
