@@ -38,7 +38,7 @@
             <access origin="https://api.facebook.com" />
             <access origin="https://*.fbcdn.net" />
             <access origin="https://*.akamaihd.net" />
-            <preference name="android-minSdkVersion" value="15" />
+            <preference name="android-minSdkVersion" value="19" />
         </config-file>
 
         <source-file src="src/android/facebooksdk.xml" target-dir="res/values" />
@@ -56,7 +56,7 @@
               android:label="@string/fb_app_name" />
         </config-file>
 
-        <framework src="com.facebook.android:facebook-android-sdk:4.14.+"/>
+        <framework src="com.facebook.android:facebook-android-sdk:4.22.+"/>
 
         <!-- cordova plugin src files -->
         <source-file src="src/android/SDKPlugin.java" target-dir="src/org/apache/cordova/facebook" />
