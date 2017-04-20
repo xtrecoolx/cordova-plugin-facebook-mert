@@ -496,6 +496,7 @@
 
 - (void) activateApp:(CDVInvokedUrlCommand *)command
 {
+	NSLog(@"FBSDK App Activate");
     [FBSDKAppEvents activateApp];
 }
 
