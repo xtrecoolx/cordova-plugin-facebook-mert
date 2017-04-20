@@ -29,7 +29,7 @@
 @implementation FacebookSDKPlugin
 
 - (void)pluginInitialize {
-    NSLog(@"Starting Facebook SDK Plugin");
+    NSLog(@"FBSDK: Started");
 
     // Add notification listener for tracking app activity with FB Events
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -47,7 +47,7 @@
         //launchOptions is nil when not start because of notification or url open
         launchOptions = [NSDictionary dictionary];
     }
-
+	NSLog(@"FBSDK: Application finished launching");
     [[FBSDKApplicationDelegate sharedInstance] application:[UIApplication sharedApplication] didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -496,7 +496,7 @@
 
 - (void) activateApp:(CDVInvokedUrlCommand *)command
 {
-	NSLog(@"FBSDK App Activate");
+	NSLog(@"FBSDK: App Activate");
     [FBSDKAppEvents activateApp];
 }
 
