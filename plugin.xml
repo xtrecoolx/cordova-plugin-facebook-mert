@@ -30,7 +30,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FacebookSDKPlugin">
-                <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+                <param name="android-package" value="org.apache.cordova.facebook.FacebookSDKPlugin" />
                 <param name="onload" value="true" />
             </feature>
             <access origin="https://m.facebook.com" />
@@ -51,7 +51,6 @@
             <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
             <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/fb_app_name" />
             <activity android:name="com.facebook.FacebookActivity"
-              android:theme="@android:style/Theme.Translucent.NoTitleBar"
               android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
               android:label="@string/fb_app_name" />
         </config-file>
