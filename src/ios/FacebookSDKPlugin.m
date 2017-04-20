@@ -29,7 +29,7 @@
 @implementation FacebookSDKPlugin
 
 - (void)pluginInitialize {
-    NSLog(@"Starting Facebook Connect Plugin Mert");
+    NSLog(@"Starting Facebook SDK Plugin");
 
     // Add notification listener for tracking app activity with FB Events
     [[NSNotificationCenter defaultCenter] addObserver:self
